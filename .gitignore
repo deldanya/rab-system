@@ -1,0 +1,51 @@
+# ── Virtual Environment ──────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Python Cache ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Database (data pribadi — backup terpisah) ─────────────────────
+data/rab_database.db
+data/rab_database.db-shm
+data/rab_database.db-wal
+
+# ── File upload & export (hasil proses, bukan source) ────────────
+data/uploads/*
+data/exports/*
+data/templates/*
+!data/uploads/.gitkeep
+!data/exports/.gitkeep
+!data/templates/.gitkeep
+
+# ── Log server ───────────────────────────────────────────────────
+data/server.log
+data/server.pid
+
+# ── macOS Launcher (dibuat ulang dengan buat_launcher.sh) ────────
+Sistem RAB.app/
+
+# ── macOS System Files ───────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Editor / IDE ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment Variables ─────────────────────────────────────────
+.env
+.env.local
+*.env
